@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dash0|資格を独学で目指す人を応援</title>
+<meta name="description" content="Dash0は、資格試験を独学で目指す人を応援するプロジェクトです。宅建・第二種電気工事士・測量士補・土地家屋調査士の独学合格の経験をもとに、勉強法や学習ツールを発信しています。">
+<meta property="og:title" content="Dash0|資格を独学で目指す人を応援">
+<meta property="og:description" content="独学で資格に挑む人へ。合格体験・学習ツール・ショート動画を発信しています。">
+<meta property="og:image" content="logo.jpg">
+<meta name="theme-color" content="#c2410c">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<style>
+:root{--ac:#c2410c;--ink:#1d2420;--sub:#4a5650;--soft:#f6f7f4;--cream:#fff4e8;--navy:#0c2557}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--ink);font-family:'Noto Sans JP',sans-serif;line-height:1.8}
+a{color:var(--ac)}a:hover{color:#9a3412}
+.in{max-width:1120px;margin:0 auto}
+.disp{font-family:'M PLUS 1p',sans-serif;font-weight:800}
+h1,h2,p{margin:0}
+header{padding:16px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.brand span{font-size:28px;letter-spacing:.02em}
+nav{display:flex;gap:18px;flex-wrap:wrap;font-size:14px}
+nav a{color:var(--sub);text-decoration:none;padding:6px 0}
+section{padding:80px 20px}
+.hero{background:var(--cream);padding:80px 20px 96px}
+.hero .in{display:flex;flex-wrap:wrap-reverse;gap:40px;align-items:center}
+.hero .txt{flex:1 1 460px;display:flex;flex-direction:column;gap:22px;align-items:flex-start}
+.eyebrow{font-size:14px;font-weight:700;color:var(--ac);letter-spacing:.12em}
+.hero h1{font-size:clamp(34px,6vw,56px);line-height:1.3}
+.lead{font-size:18px;color:#3c4842;max-width:560px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:12px 28px;border-radius:999px;font-weight:700;text-decoration:none;font-size:16px}
+.btn.fill{background:var(--ac);color:#fff}.btn.fill:hover{background:#9a3412;color:#fff}
+.btn.line{border:1.5px solid var(--ac);color:var(--ac);background:#fff}
+.btn svg{width:18px;height:18px}
+.hero .pic{flex:0 1 360px;margin:0 auto}
+.hero .pic img{width:100%;max-width:360px;display:block;border-radius:50%}
+h2{font-size:clamp(26px,4vw,32px);line-height:1.4}
+.stack{display:flex;flex-direction:column;gap:28px}
+.grid{display:grid;gap:16px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.answer{font-size:18px;font-weight:700;line-height:1.7;border-top:2px solid var(--ac);padding-top:20px}
+.g5{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--soft);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:8px}
+.num{font-size:40px;font-weight:800;color:var(--ac);line-height:1}
+.card b{font-size:17px}
+.about{background:var(--navy);color:#fff}
+.about .in{display:flex;gap:40px;flex-wrap:wrap;align-items:center}
+.about .l{flex:1 1 360px;display:flex;flex-direction:column;gap:14px}
+.about .r{flex:1 1 460px;display:flex;flex-direction:column;gap:14px;font-size:17px;color:#d5def0}
+.about .eyebrow{color:#ffb45c}
+.lic{border:1.5px solid #d9ded8;border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.lic.now{border-style:dashed;border-color:#9aa89f}
+.tag{align-self:flex-start;background:var(--ac);color:#fff;font-size:12px;font-weight:700;padding:3px 12px;border-radius:999px}
+.lic.now .tag{background:#fff;color:var(--sub);border:1px solid #9aa89f;padding:2px 12px}
+.lic p{font-size:20px;font-weight:700}
+.do{background:var(--soft)}
+.do .card{background:#fff}
+.do .card p{font-size:15px;color:var(--sub)}
+.soon{font-size:13px;font-weight:700;color:var(--sub);background:var(--soft);border-radius:999px;padding:2px 12px;align-self:flex-start}
+.prof .in{display:flex;gap:36px;flex-wrap:wrap;align-items:flex-start}
+.prof .face{flex:0 0 180px;width:180px;height:180px;border-radius:50%;object-fit:cover}
+.prof .body{flex:1 1 460px;display:flex;flex-direction:column;gap:14px}
+.box{background:var(--soft);border-radius:12px;padding:16px 20px}
+.box .h{font-size:14px;font-weight:700;margin-bottom:6px}
+.box p{font-size:15px;color:#3c4842}
+.stats{display:flex;gap:28px;flex-wrap:wrap}
+.stats .v{font-size:36px;font-weight:800;color:var(--ac);line-height:1.2}
+.stats .k{font-size:13px;color:var(--sub)}
+.follow{background:var(--ac);color:#fff;padding:88px 20px}
+.follow .in{max-width:720px;display:flex;flex-direction:column;gap:18px;align-items:center;text-align:center}
+.follow p{font-size:17px;color:#ffe8d6}
+.follow .btn{background:#fff;color:#9a3412}
+.follow .btn:hover{background:#ffe8d6;color:#9a3412}
+footer{padding:28px 20px;text-align:center;font-size:13px;color:var(--sub)}
+footer a{color:var(--sub)}
+</style>
+</head>
+<body>
+
+<header class="in">
+  <a class="brand" href="./"><img src="logo.jpg" alt=""><span class="disp">Dash<span style="color:var(--ac)">0</span></span></a>
+  <nav aria-label="ページ内メニュー">
+    <a href="#about">Dash0とは</a>
+    <a href="#shikaku">対象の資格</a>
+    <a href="#tools">できること</a>
+    <a href="#profile">運営者</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="in">
+    <div class="txt">
+      <p class="eyebrow">資格を独学で目指す人を応援</p>
+      <h1 class="disp">ゼロから走りだす<br>あなたを応援したい</h1>
+      <p class="lead">予備校に通わなくても、ひとりで抱えこまなくていい。独学で資格に挑んで合格してきた経験を、これから挑む人のために発信しています。</p>
+      <div class="btns">
+        <a class="btn fill" href="https://note.com/natty_swift5291" target="_blank" rel="noopener">noteを読む</a>
+        <a class="btn line" href="https://x.com/dash0shikaku" target="_blank" rel="noopener">Xをフォロー</a>
+      </div>
+    </div>
+    <div class="pic"><img src="logo.jpg" alt="Dash0のロゴ。光の中をスタートダッシュで走りだす人"></div>
+  </div>
+</section>
+
+<section>
+  <div class="in stack">
+    <h2 class="disp">こんな気持ち、ありませんか?</h2>
+    <div class="grid g3">
+      <div class="card"><span class="num">01</span><b>子育てしながら資格を取るのは、無理かもしれないと思っている</b></div>
+      <div class="card"><span class="num">02</span><b>今の職場で、このままでいいのか悩んでいる</b></div>
+      <div class="card"><span class="num">03</span><b>キャリアを変えたいけど、何から始めればいいかわからない</b></div>
+      <div class="card"><span class="num">04</span><b>独学の勉強が孤独で、続けるのがつらい</b></div>
+    </div>
+    <p class="answer">運営者も、仕事と4人の子育てをしながら、独学で4つの資格に合格しました。<br>限られた時間の中でどう勉強したかを、そのままお伝えします。</p>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="in">
+    <div class="l">
+      <p class="eyebrow">ABOUT</p>
+      <h2 class="disp">Dash0は、予備校ではありません。</h2>
+    </div>
+    <div class="r">
+      <p>教える人と教わる人に分かれるのではなく、同じように独学で資格に挑む人どうしが、励まし合い、情報を分け合える場所を目指しています。</p>
+      <p>「ゼロ」からのスタートでもかまいません。最初の一歩を、ここから一緒に。</p>
+    </div>
+  </div>
+</section>
+
+<section id="shikaku">
+  <div class="in stack">
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <h2 class="disp">対象の資格</h2>
+      <p style="color:var(--sub)">運営者が実際に独学で合格した資格から始めます。</p>
+    </div>
+    <div class="grid g5">
+      <div class="lic"><span class="tag">合格体験あり</span><p>宅建</p></div>
+      <div class="lic"><span class="tag">合格体験あり</span><p>第二種電気工事士</p></div>
+      <div class="lic"><span class="tag">合格体験あり</span><p>測量士補</p></div>
+      <div class="lic"><span class="tag">合格体験あり</span><p>土地家屋調査士</p></div>
+      <div class="lic now"><span class="tag">いま挑戦中</span><p>行政書士</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="tools" class="do">
+  <div class="in stack">
+    <h2 class="disp">Dash0でできること</h2>
+    <div class="grid g4">
+      <div class="card">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c2410c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h11a3 3 0 0 1 3 3v11H7a3 3 0 0 1-3-3z"/><path d="M8 9h6M8 13h6"/></svg>
+        <b>合格体験談</b>
+        <p>独学でどう勉強したか、何につまずいたかを、包み隠さず共有します。</p>
+        <a href="https://note.com/natty_swift5291" target="_blank" rel="noopener" style="font-size:15px;font-weight:700">noteで読む →</a>
+      </div>
+      <div class="card">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c2410c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h3M13 12h3M8 16h3M13 16h3"/></svg>
+        <b>学習ツール</b>
+        <p>土地家屋調査士の記述式トレーニング。座標計算(放射・交点・面積)、本試験の過去問、条文の穴埋めを、スマホで練習できます。</p>
+        <a href="https://dash0shikaku-creator.github.io/zahyo/" style="font-size:15px;font-weight:700">練習を始める →</a>
+      </div>
+      <div class="card">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c2410c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 9l3 2-3 2z"/></svg>
+        <b>ショート動画</b>
+        <p>スキマ時間に解ける一問一答を、動画で届けます。</p>
+      </div>
+      <div class="card">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c2410c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M3 19c0-3 2.5-5 5-5s5 2 5 5M11 19c0-3 2.5-5 5-5s5 2 5 5"/></svg>
+        <b>仲間とのつながり</b>
+        <p>同じ資格を目指す人と、進み具合や悩みを気軽に話せる場を準備しています。</p>
+        <span class="soon">準備中</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="profile" class="prof">
+  <div class="in">
+    <img class="face" src="logo.jpg" alt="Dash0のロゴ">
+    <div class="body">
+      <p class="eyebrow">運営者</p>
+      <h2 class="disp" style="font-size:28px">Dash0</h2>
+      <p style="font-size:16px;color:#3c4842">1989年生まれ、男性。4人の子ども(男・男・男・女)の子育てに奮闘中です。独学での資格試験勉強の経験などを発信しています。いまは行政書士に挑戦中です。</p>
+      <div class="box">
+        <p class="h">保有資格(すべて独学)</p>
+        <p>令和5年度 第二種電気工事士 取得<br>令和6年度 宅地建物取引士 取得<br>令和7年度 測量士補、土地家屋調査士試験 合格</p>
+      </div>
+      <div class="stats">
+        <div><p class="v">4</p><p class="k">独学で取得した資格</p></div>
+        <div><p class="v">1</p><p class="k">いま挑戦中の資格</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="follow">
+  <div class="in">
+    <h2 class="disp" style="font-size:clamp(26px,4.4vw,34px)">さあ、ゼロから一緒に走りだそう。</h2>
+    <p>勉強法や日々の様子を、note・X・Instagramで発信しています。</p>
+    <div class="btns" style="justify-content:center">
+      <a class="btn" href="https://note.com/natty_swift5291" target="_blank" rel="noopener">noteを読む</a>
+      <a class="btn" href="https://x.com/dash0shikaku" target="_blank" rel="noopener">Xをフォロー</a>
+      <a class="btn" href="https://www.instagram.com/dash0.shikaku/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© Dash0 ・ <a href="https://x.com/dash0shikaku" target="_blank" rel="noopener">X</a> ・ <a href="https://note.com/natty_swift5291" target="_blank" rel="noopener">note</a> ・ <a href="https://www.instagram.com/dash0.shikaku/" target="_blank" rel="noopener">Instagram</a> ・ お問い合わせはXのDMからどうぞ</p>
+</footer>
+
+</body>
+</html>
